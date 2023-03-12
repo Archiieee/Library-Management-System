@@ -13,7 +13,7 @@ export class StudentComponent implements OnInit {
       "department": "Dep1",
       "rollNumber": "11",
       "birthDate": "03/02/2004",
-      "mobileNumber": "123456"
+      "mobileNumber": "127456"
     },
     {
       "id": 34,
@@ -21,7 +21,7 @@ export class StudentComponent implements OnInit {
       "department": "Dep2",
       "rollNumber": "18",
       "birthDate": "03/12/2000",
-      "mobileNumber": "12346"
+      "mobileNumber": "123746"
     }
   ];
   constructor() { }

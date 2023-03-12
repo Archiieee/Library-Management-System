@@ -11,38 +11,14 @@ export class BookComponent implements OnInit {
   {
     "id": 33,
     "title": "archiii",
-    "author": "string",
-    "isbn": "string",
-    "publicationDate": "string",
-    "publisher": "string",
-    "copies": 0,
-    "category": "string",
-    "genre": "string",
-    "subgenre": "string"
-  },
-  {
-    "id": 34,
-    "title": "Raj",
-    "author": "string",
-    "isbn": "string",
-    "publicationDate": "string",
-    "publisher": "string",
-    "copies": 0,
-    "category": "string",
-    "genre": "string",
-    "subgenre": "string"
-  },
-  {
-    "id": 35,
-    "title": "SRK",
-    "author": "string",
-    "isbn": "string",
-    "publicationDate": "string",
-    "publisher": "string",
-    "copies": 0,
-    "category": "string",
-    "genre": "string",
-    "subgenre": "string"
+    "author": "Auth",
+    "isbn": "987456",
+    "publicationDate": "23/04/2012",
+    "publisher": "Pub",
+    "copies": 22,
+    "category": "Cat",
+    "genre": "gen",
+    "subgenre": "ssubgen"
   },
   {
     "id": 65,
