@@ -1,0 +1,28 @@
+/* Style for the side navigation bar container */
+.sidenav {
+    height: 100%; /* Set the height to full screen height */
+    width: 200px; /* Set the width of the side navigation bar */
+    position: fixed; /* Make the side navigation bar fixed to the viewport */
+    z-index: 1; /* Set the z-index to appear on top of other content */
+    top: 0; /* Set the top position to align with the top of the viewport */
+    left: 0; /* Set the left position to align with the left of the viewport */
+    background-color: #f1f1f1; /* Set the background color */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    padding-top: 60px; /* Set the top padding to align with the page content */
+  }
+  
+  /* Style for the links inside the side navigation bar */
+  .sidenav a {
+    display: block; /* Display the links as block elements */
+    padding: 8px 8px 8px 32px; /* Set the padding for the links */
+    text-decoration: none; /* Remove the underline */
+    font-size: 16px; /* Set the font size */
+    color: #818181; /* Set the text color */
+  }
+  
+  /* Style for the active link */
+  .sidenav a.active {
+    background-color: #4CAF50; /* Set the background color for the active link */
+    color: #fff; /* Set the text color for the active link */
+  }
+  

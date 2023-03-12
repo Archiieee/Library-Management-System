@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Page</title>
+	<link rel="stylesheet" type="text/css" href="book.component.css">
+	
+</head>
+<body>
+	
+	<div class="container">
+		<button class="add-book-button">Add Book</button>
+		<h1>{{title}}</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Title</th>
+					<th>Author</th>
+					<th>ISBN</th>
+					<th>Publication Date</th>
+					<th>Publisher</th>
+					<th>Copies</th>
+					<th>Category</th>
+					<th>Genre</th>
+					<th>Subgenre</th>
+				</tr>
+			</thead>
+			<tbody *ngIf="books.length >0">
+			
+				<tr *ngFor="let book of books">
+					<td>{{book.id}}</td>
+					<td>{{book.title}}</td>
+					<td>{{book.author}}</td>
+					<td>{{book.isbn}}</td>
+					<td>{{book.publicationDate}}</td>
+					<td>{{book.publisher}}</td>
+					<td>{{book.copies}}</td>
+					<td>{{book.category}}</td>
+					<td>{{book.genre}}</td>
+					<td>{{book.subgenre}}</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<input type="submit" value="Save Changes">
+	</div>
+</body>
+</html>

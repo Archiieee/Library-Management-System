@@ -1,0 +1,106 @@
+/* Style for the container */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style for the table header */
+  th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for the input fields */
+  input[type="text"],
+  input[type="date"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  /* Style for the submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* Style for the empty table rows */
+  tr.empty-row td {
+    height: 50px;
+  }
+  /* Set margin and padding to 0 for the body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center the container element */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style the input fields */
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the empty rows */
+  tr.empty-row td {
+    border: none;
+    height: 10px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
