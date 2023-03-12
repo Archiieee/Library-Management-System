@@ -16,13 +16,13 @@
 				<th>Due Date</th>
 				<th>Return Date</th>
 			</tr>
-			<tr>
-				<td><input type="text" name="id"></td>
-				<td><input type="text" name="bookid"></td>
-				<td><input type="text" name="studentid"></td>
-				<td><input type="date" name="checkoutdate"></td>
-				<td><input type="date" name="duedate"></td>
-				<td><input type="date" name="returndate"></td>
+			<tr *ngFor="let loan of loans">
+				<td>{{loan.id}}</td>
+				<td>{{loan.bookId}}</td>
+				<td>{{loan.studentId}}</td>
+				<td>{{loan.checkoutDate}}</td>
+				<td>{{loan.dueDate}}</td>
+				<td>{{loan.returnDate}}</td>
 			</tr>
 
 		</table>

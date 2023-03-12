@@ -18,48 +18,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td><input type="text" name="id"></td>
-					<td><input type="text" name="name"></td>
-					<td><input type="text" name="address"></td>
-					<td><input type="text" name="phone"></td>
-					<td><input type="text" name="email"></td>
+				<tr *ngFor="let publisher of publishers">
+					<td>{{publisher.id}}</td>
+					<td>{{publisher.name}}</td>
+					<td>{{publisher.address}}</td>
+					<td>{{publisher.phone}}</td>
+					<td>{{publisher.email}}</td>
 				</tr>
-				<tr>
-					<td><input type="text" name="id"></td>
-					<td><input type="text" name="name"></td>
-					<td><input type="text" name="address"></td>
-					<td><input type="text" name="phone"></td>
-					<td><input type="text" name="email"></td>
-				</tr>
-				<tr class="empty-row">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="id"></td>
-					<td><input type="text" name="name"></td>
-					<td><input type="text" name="address"></td>
-					<td><input type="text" name="phone"></td>
-					<td><input type="text" name="email"></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="id"></td>
-					<td><input type="text" name="name"></td>
-					<td><input type="text" name="address"></td>
-					<td><input type="text" name="phone"></td>
-					<td><input type="text" name="email"></td>
-				</tr>
-				<tr class="empty-row">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+
+		
+		
 			</tbody>
 		</table>
 		<input type="submit" value="Save Changes">

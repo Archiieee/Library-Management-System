@@ -22,7 +22,7 @@ export class BookComponent implements OnInit {
   },
   {
     "id": 34,
-    "title": "kalaaaa",
+    "title": "Raj",
     "author": "string",
     "isbn": "string",
     "publicationDate": "string",
@@ -34,7 +34,7 @@ export class BookComponent implements OnInit {
   },
   {
     "id": 35,
-    "title": "kalaaaa",
+    "title": "SRK",
     "author": "string",
     "isbn": "string",
     "publicationDate": "string",
@@ -46,7 +46,7 @@ export class BookComponent implements OnInit {
   },
   {
     "id": 65,
-    "title": "Title1",
+    "title": "Rahul",
     "author": "Author1",
     "isbn": "ISBN1",
     "publicationDate": "PubDate1",
@@ -58,7 +58,7 @@ export class BookComponent implements OnInit {
   },
   {
     "id": 66,
-    "title": "Title2",
+    "title": "Raj",
     "author": "Author2",
     "isbn": "ISBN2",
     "publicationDate": "PubDate2",

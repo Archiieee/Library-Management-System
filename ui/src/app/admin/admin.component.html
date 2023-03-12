@@ -14,36 +14,13 @@
 				<th>Username</th>
 				<th>Password</th>
 			</tr>
-			<tr>
-				<td><input type="text" name="id"></td>
-				<td><input type="text" name="name"></td>
-				<td><input type="text" name="username"></td>
-				<td><input type="password" name="password"></td>
+			<tr *ngFor="let admin of admins">
+				<td>{{admin.id}}</td>
+				<td>{{admin.name}}</td>
+				<td>{{admin.username}}</td>
+				<td>{{admin.password}}</td>
 			</tr>
-			<tr>
-				<td><input type="text" name="id"></td>
-				<td><input type="text" name="name"></td>
-				<td><input type="text" name="username"></td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="id"></td>
-				<td><input type="text" name="name"></td>
-				<td><input type="text" name="username"></td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="id"></td>
-				<td><input type="text" name="name"></td>
-				<td><input type="text" name="username"></td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="id"></td>
-				<td><input type="text" name="name"></td>
-				<td><input type="text" name="username"></td>
-				<td><input type="password" name="password"></td>
-			</tr>
+			
 		</table>
 		<input type="submit" value="Save Changes">
 	</div>
