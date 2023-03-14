@@ -11,7 +11,9 @@ import { StudentComponent } from './student/student.component';
 import { AdminComponent } from './admin/admin.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
-
+import { AddAdminComponent } from './add-admin/add-admin.component';
+import { AddBooksComponent } from './add-books/add-books.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,14 @@ import { HomeComponent } from './home/home.component';
     AdminComponent,
     SidenavComponent,
     HomeComponent,
+    AddAdminComponent,
+    AddBooksComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, ReactiveFormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
