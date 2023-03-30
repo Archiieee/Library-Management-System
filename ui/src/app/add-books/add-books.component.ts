@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder , FormGroup, Validators} from '@angular/forms';
+import { Router } from '@angular/router'; //
+import { HttpClient } from '@angular/common/http'; //
 @Component({
   selector: 'app-add-books',
   templateUrl: './add-books.component.html',
@@ -7,16 +9,34 @@ import { FormBuilder , FormGroup, Validators} from '@angular/forms';
 })
 export class AddBooksComponent implements OnInit {
   booksForm : FormGroup;
-  constructor(private formbuilder: FormBuilder) {
+  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router) { //
     this.booksForm = this.formbuilder.group({
-      name:['', Validators.required],
+      title:['', Validators.required],
       author:[''],
       isbn:[''],
-      copies:[5]
+      copies:[5],
+      genre:[''],
+      subgenre:[],
+      publicationDate:[],
+      publisher:[],
+      category:[]
     })
    }
 
   ngOnInit(): void {
   }
-
+  saveBook(){
+    // Make Post call to request url http://localhost:8080/book/saveBook
+    
+    let bookData = this.booksForm.value;
+    // Handle date to string
+    this.http.post('http://localhost:8080/book/saveBook',bookData)
+    .subscribe(response => {
+      console.log('Book saved to DB', response)
+      this.router.navigateByUrl('/books')
+    }, error =>{
+      console.error("Error in book save", error)
+    }
+    );
+}
 }

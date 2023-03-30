@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-book',
   templateUrl: './book.component.html',
@@ -7,53 +9,25 @@ import { Router } from '@angular/router';
 })
 export class BookComponent implements OnInit {
   title = 'Books Page'
-   books = [
-  {
-    "id": 33,
-    "title": "archiii",
-    "author": "Auth",
-    "isbn": "987456",
-    "publicationDate": "23/04/2012",
-    "publisher": "Pub",
-    "copies": 22,
-    "category": "Cat",
-    "genre": "gen",
-    "subgenre": "ssubgen"
-  },
-  {
-    "id": 65,
-    "title": "Rahul",
-    "author": "Author1",
-    "isbn": "ISBN1",
-    "publicationDate": "PubDate1",
-    "publisher": "Publisher1",
-    "copies": 1,
-    "category": "Category1",
-    "genre": "Genre1",
-    "subgenre": "Subgenre1"
-  },
-  {
-    "id": 66,
-    "title": "Raj",
-    "author": "Author2",
-    "isbn": "ISBN2",
-    "publicationDate": "PubDate2",
-    "publisher": "Publisher2",
-    "copies": 2,
-    "category": "Category2",
-    "genre": "Genre2",
-    "subgenre": "Subgenre2"
-  }
-];
-
+  books: any = [];
   //constructor() { }
-  constructor(private router: Router) { }
+  constructor(private router: Router,  private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.fetchAllBooks()
   }
   addBooks(){
     console.log("addBooks button clicked")
     //take user to add-books url
     this.router.navigateByUrl('/add-books')
+  }
+  fetchAllBooks(){
+    this.http.get("http://localhost:8080/book/getAllBooks")
+    .subscribe(resp =>{
+      this.books = resp;
+      console.log('Books retrieved successfully:', this.books)
+    }, error => {
+      console.error('Error retrieving books:', error);
+    });
   }
 }
