@@ -11,6 +11,7 @@ import { StudentComponent } from './student/student.component';
 import { AddAdminComponent } from './add-admin/add-admin.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddAuthorComponent } from './add-author/add-author.component';
+import { AddPublisherComponent } from './add-publisher/add-publisher.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'add-authors',
     component: AddAuthorComponent,
+  },
+  {
+    path: 'add-publisher',
+    component: AddPublisherComponent,
   },
 ];
 

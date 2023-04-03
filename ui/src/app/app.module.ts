@@ -16,7 +16,8 @@ import { AddBooksComponent } from './add-books/add-books.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AddStudentComponent } from './add-student/add-student.component';
-import { AddAuthorComponent } from './add-author/add-author.component'
+import { AddAuthorComponent } from './add-author/add-author.component';
+import { AddPublisherComponent } from './add-publisher/add-publisher.component'
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { AddAuthorComponent } from './add-author/add-author.component'
     AddBooksComponent,
     AddStudentComponent,
     AddAuthorComponent,
+    AddPublisherComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="publisher.component.css">
 </head>
 <body>
-	<div class="container">
+	<button  class="button" (click)="addPublishers()"> Add Publisher</button>
 		<h1>Publisher Page</h1>
 		<table>
 			<thead>
@@ -24,13 +24,13 @@
 					<td>{{publisher.address}}</td>
 					<td>{{publisher.phone}}</td>
 					<td>{{publisher.email}}</td>
+					<td>
+						<button (click)="deletePublisher(publisher.id)">Delete</button>
+					</td>
 				</tr>
-
-		
 		
 			</tbody>
 		</table>
-		<input type="submit" value="Save Changes">
-	</div>
+	
 </body>
 </html>
