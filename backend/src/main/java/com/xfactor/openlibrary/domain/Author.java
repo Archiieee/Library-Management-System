@@ -16,8 +16,6 @@ public class Author {
     private Long id;
     @Column
     private String name;
-    // @Column
-    // private int age;
     @Column
     private String birthDate;
     @Column
@@ -38,14 +36,6 @@ public class Author {
     public void setName(String name) {
         this.name = name;
     }
-
-    // public int getAge() {
-    // return age;
-    // }
-
-    // public void setAge(int age) {
-    // this.age = age;
-    // }
 
     public String getBirthDate() {
         return birthDate;

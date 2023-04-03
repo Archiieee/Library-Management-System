@@ -6,7 +6,8 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Student Page</h1>
+		<button  class="button" (click)="addStudents()"> Add Student</button>
+		<h1>{{title}}</h1>
 		<table>
 			<thead>
 				<tr>
@@ -25,6 +26,9 @@
 					<td>{{student.department}}</td>
 					<td>{{student.birthDate}}</td>
 					<td>{{student.mobileNumber}}</td>
+					<td>
+						<button (click)="deleteStudent(student.id)">Delete</button>
+					</td>
 				</tr>
 			</tbody>
 		</table>

@@ -23,6 +23,7 @@
 					<th>Category</th>
 					<th>Genre</th>
 					<th>Subgenre</th>
+					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody *ngIf="books.length >0">
@@ -38,6 +39,9 @@
 					<td>{{book.category}}</td>
 					<td>{{book.genre}}</td>
 					<td>{{book.subgenre}}</td>
+					<td>
+						<button (click)="deleteBook(book.id)">Delete</button>
+					</td>
 				</tr>
 				
 			</tbody>

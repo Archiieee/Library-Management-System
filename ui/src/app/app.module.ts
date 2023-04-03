@@ -14,7 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { AddAdminComponent } from './add-admin/add-admin.component';
 import { AddBooksComponent } from './add-books/add-books.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddAuthorComponent } from './add-author/add-author.component'
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { HttpClientModule} from '@angular/common/http'
     HomeComponent,
     AddAdminComponent,
     AddBooksComponent,
+    AddStudentComponent,
+    AddAuthorComponent,
   ],
   imports: [
     BrowserModule,

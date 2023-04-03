@@ -30,4 +30,15 @@ export class BookComponent implements OnInit {
       console.error('Error retrieving books:', error);
     });
   }
+    deleteBook(Id:Number){
+      const url = 'http://localhost:8080/book/delete/' + Id
+      console.log(url)
+      this.http.delete(url)
+      .subscribe(resp => {
+        console.log('Book deleted successfully');
+        this.fetchAllBooks()
+      }, error => {
+        console.error('Error deleting book:', error);
+      });
+  }
 }

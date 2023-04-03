@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { LoanComponent } from './loan/loan.component';
 import { PublisherComponent } from './publisher/publisher.component';
 import { StudentComponent } from './student/student.component';
+import { AddAdminComponent } from './add-admin/add-admin.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddAuthorComponent } from './add-author/add-author.component';
 
 const routes: Routes = [
   {
@@ -41,6 +44,18 @@ const routes: Routes = [
   {
     path: 'add-books',
     component: AddBooksComponent,
+  },
+  {
+    path: 'add-admins',
+    component: AddAdminComponent,
+  },
+  {
+    path: 'add-students',
+    component: AddStudentComponent,
+  },
+  {
+    path: 'add-authors',
+    component: AddAuthorComponent,
   },
 ];
 
