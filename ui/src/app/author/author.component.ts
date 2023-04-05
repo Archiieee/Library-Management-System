@@ -29,4 +29,15 @@ export class AuthorComponent implements OnInit {
       console.error('Error retrieving authors:', error);
     });
   }
+  deleteAuthor(Id:Number){
+    const url = 'http://localhost:8080/author/delete/' + Id
+    console.log(url)
+    this.http.delete(url)
+    .subscribe(resp => {
+      console.log('Author deleted successfully');
+      this.fetchAllAuthors()
+    }, error => {
+      console.error('Error deleting author:', error);
+    });
+}
 }

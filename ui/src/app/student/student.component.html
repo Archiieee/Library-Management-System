@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="student.component.css">
 </head>
 <body>
-	<div class="container">
+	<div >
 		<button  class="button" (click)="addStudents()"> Add Student</button>
 		<h1>{{title}}</h1>
 		<table>
@@ -16,7 +16,7 @@
 					<th>Department</th>
 					<th>Roll No</th>
 					<th>Birthdate</th>
-					<th>Mobile Number</th>
+					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -24,15 +24,15 @@
 					<td>{{student.id}}</td>
 					<td>{{student.name}}</td>
 					<td>{{student.department}}</td>
+					<td>{{student.rollNo}}</td>
 					<td>{{student.birthDate}}</td>
-					<td>{{student.mobileNumber}}</td>
+					<td>{{student.actions}}</td>
 					<td>
 						<button (click)="deleteStudent(student.id)">Delete</button>
 					</td>
 				</tr>
 			</tbody>
 		</table>
-		<input type="submit" value="Save Changes">
 	</div>
 </body>
 </html>
