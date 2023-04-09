@@ -8,6 +8,7 @@ form {
   
   label {
     margin: 10px 0;
+    font-weight: bold;
   }
   
   input[type="text"] {

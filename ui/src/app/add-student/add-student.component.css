@@ -8,6 +8,7 @@ form {
   
   label {
     margin: 10px 0;
+    font-weight: bold;
   }
   
   input[type="text"] {
@@ -17,6 +18,7 @@ form {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+   
   }
 
   input[type="submit"] {
@@ -29,6 +31,7 @@ form {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    
   }
   
   
