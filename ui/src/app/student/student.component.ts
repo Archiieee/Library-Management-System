@@ -30,7 +30,7 @@ export class StudentComponent implements OnInit {
     });
   }
     deleteStudent(Id:Number){
-      const url = 'http://localhost:8080/loan/delete' + Id
+      const url = 'http://localhost:8080/student/deleteStudentById/' + Id
       console.log(url)
       this.http.delete(url)
       .subscribe(resp => {
@@ -41,4 +41,8 @@ export class StudentComponent implements OnInit {
       });
   }
 
+updateStudent(Id :Number){
+  console.log("update student button clicked ")
+  this.router.navigate(['/student-update',Id])
+}
 }

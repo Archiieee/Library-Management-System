@@ -36,7 +36,7 @@ public class StudentController {
     }
 
     @PutMapping("/updateStudent")
-    public Student updatePublisher(@RequestBody Student student) {
+    public Student updateStudent(@RequestBody Student student) {
         if (student.getId() != null) {
             Student student2 = studentRepository.save(student);
             return student2;

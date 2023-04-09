@@ -5,25 +5,29 @@
 	<link rel="stylesheet" type="text/css" href="admin.component.css">
 </head>
 <body>
-	<div class="container">
-		<button  class="button" (click)="addAdmins()"> Add Admin</button>
+	<div>
 		<h1>{{title}}</h1>
+		<button  class="button" (click)="addAdmins()"> Add Admin</button>
 		<table>
 			<tr>
 				<th>ID</th>
 				<th>Name</th>
 				<th>Username</th>
 				<th>Password</th>
+				<th>Actions</th>
 			</tr>
 			<tr *ngFor="let admin of admins">
 				<td>{{admin.id}}</td>
 				<td>{{admin.name}}</td>
 				<td>{{admin.username}}</td>
 				<td>{{admin.password}}</td>
+				<td>
+					<button (click)="deleteAdmin(admin.id)">Delete</button>
+					<button (click)="updateAdmin(admin.id)">Update</button>
+				</td>
 			</tr>
 			
 		</table>
-		<input type="submit" value="Save Changes">
 	</div>
 </body>
 </html>

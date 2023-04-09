@@ -29,5 +29,26 @@ export class AdminComponent implements OnInit {
       console.error('Error retrieving admins:', error);
     });
   }
-
+  deleteAdmin(Id:Number){
+    const url = 'http://localhost:8080/admin/delete/' + Id
+    console.log(url)
+    this.http.delete(url)
+    .subscribe(resp => {
+      console.log('Admin deleted successfully');
+      this.fetchAllAdmins()
+    }, error => {
+      console.error('Error deleting admins:', error);
+    });
+}
+updateAdmin(Id:Number){
+  const url = 'http://localhost:8080/admin/update/' + Id
+  console.log(url)
+  this.http.delete(url)
+  .subscribe(resp => {
+    console.log('Admin updated successfully');
+    this.fetchAllAdmins()
+  }, error => {
+    console.error('Error updating admin:', error);
+  });
+}
 }

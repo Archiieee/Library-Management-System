@@ -5,28 +5,32 @@
 	<link rel="stylesheet" type="text/css" href="loan.component.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Loan Page</h1>
+	<div>
+		<h1>{{title}}</h1>
+		<button  class="button" (click)="addLoans()">Add Loan</button>
 		<table>
 			<tr>
 				<th>ID</th>
 				<th>Book ID</th>
 				<th>Student ID</th>
-				<th>Checkout Date</th>
 				<th>Due Date</th>
 				<th>Return Date</th>
+				<th>Actions</th>
 			</tr>
 			<tr *ngFor="let loan of loans">
 				<td>{{loan.id}}</td>
 				<td>{{loan.bookId}}</td>
 				<td>{{loan.studentId}}</td>
-				<td>{{loan.checkoutDate}}</td>
 				<td>{{loan.dueDate}}</td>
 				<td>{{loan.returnDate}}</td>
+				<td>
+					<button (click)="deleteLoan(loan.id)">Delete</button>
+					<button (click)="updateLoan(loan.id)">Update</button>
+				</td>
 			</tr>
 
 		</table>
-		<input type="submit" value="Save Changes">
+
 	</div>
 </body>
 </html>

@@ -6,8 +6,8 @@
 </head>
 <body>
 	<div >
-		<button  class="button" (click)="addStudents()"> Add Student</button>
 		<h1>{{title}}</h1>
+		<button  class="button" (click)="addStudents()"> Add Student</button>
 		<table>
 			<thead>
 				<tr>
@@ -24,11 +24,11 @@
 					<td>{{student.id}}</td>
 					<td>{{student.name}}</td>
 					<td>{{student.department}}</td>
-					<td>{{student.rollNo}}</td>
+					<td>{{student.rollNumber}}</td>
 					<td>{{student.birthDate}}</td>
-					<td>{{student.actions}}</td>
 					<td>
 						<button (click)="deleteStudent(student.id)">Delete</button>
+						<button (click)="updateStudent(student.id)">Update</button>
 					</td>
 				</tr>
 			</tbody>

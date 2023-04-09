@@ -11,17 +11,18 @@ export class AddStudentComponent implements OnInit {
   studentsForm : FormGroup;
   constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router) { //
     this.studentsForm = this.formbuilder.group({
+      id:[''],
       name:['', Validators.required],
-      department:[''],
       rollNumber:[''],
-      birthDate:[5],
-      id:['']
+      department:[''],
+      birthDate:[''],
+      
     })
    }
   ngOnInit(): void {
   }
   saveStudent(){
-    // Make Post call to request url http://localhost:8080/book/saveBook
+    // Make Post call to request url http://localhost:8080/book/saveStudent
     
     let studentData = this.studentsForm.value;
     // Handle date to string

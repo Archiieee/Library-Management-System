@@ -40,4 +40,15 @@ export class AuthorComponent implements OnInit {
       console.error('Error deleting author:', error);
     });
 }
+updateAuthor(Id:Number){
+  const url = 'http://localhost:8080/author/update/' + Id
+  console.log(url)
+  this.http.delete(url)
+  .subscribe(resp => {
+    console.log('Author updated successfully');
+    this.fetchAllAuthors()
+  }, error => {
+    console.error('Error updating author:', error);
+  });
+}
 }

@@ -5,8 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="publisher.component.css">
 </head>
 <body>
-	<button  class="button" (click)="addPublishers()"> Add Publisher</button>
-		<h1>Publisher Page</h1>
+	
+		<h1>{{title}}</h1>
+		<button  class="button" (click)="addPublishers()"> Add Publisher</button>
 		<table>
 			<thead>
 				<tr>
@@ -15,6 +16,7 @@
 					<th>Address</th>
 					<th>Phone</th>
 					<th>Email</th>
+					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -26,7 +28,9 @@
 					<td>{{publisher.email}}</td>
 					<td>
 						<button (click)="deletePublisher(publisher.id)">Delete</button>
+						<button (click)="updatePublisher(publisher.id)">Update</button>
 					</td>
+					
 				</tr>
 		
 			</tbody>

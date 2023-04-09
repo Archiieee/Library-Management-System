@@ -40,5 +40,8 @@ export class PublisherComponent implements OnInit {
         console.error('Error deleting publishers:', error);
       });
   }
-
+  updatePublisher(Id :Number){
+    console.log("update publisher button clicked ")
+    this.router.navigate(['/publisher-update',Id])
+  }
 }

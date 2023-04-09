@@ -41,4 +41,8 @@ export class BookComponent implements OnInit {
         console.error('Error deleting book:', error);
       });
   }
+  updateBook(Id :Number){
+    console.log("update book button clicked ")
+    this.router.navigate(['/book-update',Id])
+  }
 }

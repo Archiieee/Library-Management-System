@@ -50,4 +50,5 @@ public class PublisherController {
     public void deletePublisher(@PathVariable Long id) {
         publisherRepository.deleteById(id);
     }
+
 }

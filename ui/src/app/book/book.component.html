@@ -38,7 +38,11 @@
 					<td>{{book.genre}}</td>
 					<td>{{book.subgenre}}</td>
 					<td>
+						<div class="hello">
 						<button (click)="deleteBook(book.id)">Delete</button>
+						<button (click)="updateBook(book.id)">Update</button>
+						</div>
+						
 					</td>
 				</tr>
 				
