@@ -18,7 +18,8 @@ import { HttpClientModule} from '@angular/common/http';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddAuthorComponent } from './add-author/add-author.component';
 import { AddPublisherComponent } from './add-publisher/add-publisher.component';
-import { AddLoanComponent } from './add-loan/add-loan.component'
+import { AddLoanComponent } from './add-loan/add-loan.component';
+import { UpdateBookComponent } from './update-book/update-book.component'
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { AddLoanComponent } from './add-loan/add-loan.component'
     AddAuthorComponent,
     AddPublisherComponent,
     AddLoanComponent,
+    UpdateBookComponent,
   ],
   imports: [
     BrowserModule,

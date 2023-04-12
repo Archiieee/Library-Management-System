@@ -43,6 +43,6 @@ export class BookComponent implements OnInit {
   }
   updateBook(Id :Number){
     console.log("update book button clicked ")
-    this.router.navigate(['/book-update',Id])
+    this.router.navigate(['/update-book',Id])
   }
 }
