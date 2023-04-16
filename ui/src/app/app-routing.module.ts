@@ -14,6 +14,11 @@ import { AddAuthorComponent } from './add-author/add-author.component';
 import { AddPublisherComponent } from './add-publisher/add-publisher.component';
 import { AddLoanComponent } from './add-loan/add-loan.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
+import { UpdateAdminComponent } from './update-admin/update-admin.component';
+import { UpdateAuthorComponent } from './update-author/update-author.component';
+import { UpdateLoanComponent } from './update-loan/update-loan.component';
+import { UpdateStudentComponent } from './update-student/update-student.component';
+import { UpdatePublisherComponent } from './update-publisher/update-publisher.component';
 
 const routes: Routes = [
   {
@@ -71,6 +76,26 @@ const routes: Routes = [
   {
     path: 'update-book/:id',
     component : UpdateBookComponent,
+  },
+  {
+    path: 'update-admin/:id',
+    component : UpdateAdminComponent ,
+  },
+  {
+    path: 'update-author/:id',
+    component : UpdateAuthorComponent,
+  },
+  {
+    path: 'update-loan/:id',
+    component : UpdateLoanComponent,
+  },
+  {
+    path: 'update-publisher/:id',
+    component : UpdatePublisherComponent,
+  },
+  {
+    path: 'update-student/:id',
+    component : UpdateStudentComponent,
   },
 ];
 

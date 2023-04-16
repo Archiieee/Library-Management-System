@@ -1,0 +1,23 @@
+<div style = "padding-left: 100px;">
+    <h1> Update Admin</h1>
+    <form [formGroup]="adminForm" (ngSubmit)="saveAdmin()">
+    <label>Id</label>
+    <input type="text" formControlName="id">
+    
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    
+    <label>Username</label>
+    <input type="text" formControlName="username">
+    
+    <label>Password </label>
+    <input type="text" formControlName="password">
+    
+    
+    <input type="submit" value="Save Admin">
+    </form>
+    </div>
+    <div>
+        <h3> Form status: {{adminForm.valid}}</h3>
+    </div>
+    

@@ -1,0 +1,27 @@
+<p>update-loan works!</p>
+<div style = "padding-left: 100px;">
+    <h1> Update Loan</h1>
+   
+    <form [formGroup]="loanForm" (ngSubmit)="saveLoan()">
+    <label>Id</label>
+    <input type="text" formControlName="id">
+    
+    <label>Book Id</label>
+    <input type="text" formControlName="bookId">
+    
+    <label>Student Id</label>
+    <input type="text" formControlName="studentId">
+    
+    <label>Due Date </label>
+    <input type="text" formControlName="dueDate">
+    
+    <label>Return Date </label>
+    <input type="text" formControlName="returnDate">
+    
+    <input type="submit" value="Save">
+    </form>
+    </div>
+    <div>
+        <h3> Form status: {{loanForm.valid}}</h3>
+    </div>
+    

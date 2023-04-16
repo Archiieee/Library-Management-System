@@ -42,6 +42,6 @@ export class PublisherComponent implements OnInit {
   }
   updatePublisher(Id :Number){
     console.log("update publisher button clicked ")
-    this.router.navigate(['/publisher-update',Id])
+    this.router.navigate(['/update-publisher',Id])
   }
 }

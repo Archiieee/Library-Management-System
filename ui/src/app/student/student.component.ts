@@ -43,6 +43,6 @@ export class StudentComponent implements OnInit {
 
 updateStudent(Id :Number){
   console.log("update student button clicked ")
-  this.router.navigate(['/student-update',Id])
+  this.router.navigate(['/update-student',Id])
 }
 }

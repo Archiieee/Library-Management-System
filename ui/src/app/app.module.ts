@@ -19,7 +19,12 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { AddAuthorComponent } from './add-author/add-author.component';
 import { AddPublisherComponent } from './add-publisher/add-publisher.component';
 import { AddLoanComponent } from './add-loan/add-loan.component';
-import { UpdateBookComponent } from './update-book/update-book.component'
+import { UpdateBookComponent } from './update-book/update-book.component';
+import { UpdateAdminComponent } from './update-admin/update-admin.component';
+import { UpdateAuthorComponent } from './update-author/update-author.component';
+import { UpdateLoanComponent } from './update-loan/update-loan.component';
+import { UpdatePublisherComponent } from './update-publisher/update-publisher.component';
+import { UpdateStudentComponent } from './update-student/update-student.component'
 
 
 @NgModule({
@@ -40,6 +45,11 @@ import { UpdateBookComponent } from './update-book/update-book.component'
     AddPublisherComponent,
     AddLoanComponent,
     UpdateBookComponent,
+    UpdateAdminComponent,
+    UpdateAuthorComponent,
+    UpdateLoanComponent,
+    UpdatePublisherComponent,
+    UpdateStudentComponent,
   ],
   imports: [
     BrowserModule,

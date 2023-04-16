@@ -42,6 +42,6 @@ export class LoanComponent implements OnInit {
   }
   updateLoan(Id :Number){
     console.log("update loan button clicked ")
-    this.router.navigate(['/loan-update',Id])
+    this.router.navigate(['/update-loan',Id])
   }
 }
